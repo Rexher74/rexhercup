@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RexherCup</title>
+        <link rel="icon" href="logo.png" type="image/icon type">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <style>
+            body {
+                margin: 0;
+            }
+            /* width */
+            ::-webkit-scrollbar {
+                width: 10px;
+            }
+            
+            /* Track */
+            ::-webkit-scrollbar-track {
+                background: #f1f1f1; 
+            }
+            
+            /* Handle */
+            ::-webkit-scrollbar-thumb {
+                background: #888; 
+            }
+            
+            /* Handle on hover */
+            ::-webkit-scrollbar-thumb:hover {
+                background: #555; 
+            }
+            .main_header {
+                width: 100%;
+                height: 50vh;
+                background: linear-gradient(#EBBCA8, #ffffff);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .main_title_header{
+                background-color: #ffffff44;
+                padding: 2% 10%;
+                border-radius: 30px;
+                -webkit-box-shadow: 0px 0px 70px -20px rgba(0,0,0,0.75);
+                -moz-box-shadow: 0px 0px 70px -20px rgba(0,0,0,0.75);
+                box-shadow: 0px 0px 70px -20px rgba(0,0,0,0.75);
+            }
+            .main_title {
+                font-family: "Raleway", sans-serif;
+                font-size: 90px;
+                text-align: center;
+                font-weight: 700;
+            }
+            .main_body{
+                font-family: "Raleway", sans-serif;
+                font-size: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 100px;
+            }
+            .main_table th, td{
+                padding: 10px;
+            }
+            .navbar_item{
+                font-family: "Raleway", sans-serif;
+                padding: 12.5px;
+                border-radius: 5px;
+                font-size: 20px;
+                font-weight: 600;
+                cursor: pointer;
+                transition: 0.3s background;
+                display: inline-block;
+            }
+            .navbar{
+                width: 100%;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                padding: 0 10px;
+                position: fixed;
+                background-color: white;
+                box-shadow: 0 5px 20px -2px gray;
+            }
+            #link_bases:hover{
+                background: rgb(196, 196, 196);
+            }
+            #link_lichess_team:hover{
+                background: rgb(196, 196, 196);
+            }
+            #link_lichess_trn:hover{
+                background: rgb(196, 196, 196);
+            }
+            #link_form:hover{
+                background: rgb(196, 196, 196);
+            }
+            #link_instagram:hover{
+                background: rgb(196, 196, 196);
+            }
+            .img_logo{
+                height: 50px;
+                margin: 5px;
+                cursor: pointer;
+            }
+            #colaboration_header{
+                margin-left: auto;
+                display: flex;
+                align-items: center;
+            }
+            .colaboration_text{
+                font-family: "Raleway", sans-serif;
+                padding: 15px;
+                font-size: 20px;
+                font-weight: 600;
+                display: inline-block;
+            }
+
+            @media screen and (max-width: 1400px) {
+                .navbar_item {
+                    font-size: 16px;
+                }
+                .colaboration_text{
+                    font-size: 16px;
+                }
+                .img_logo{
+                    height: 35px;
+                }
+                .main_header {
+                    height: 45vh;
+                }
+            }
+            @media screen and (max-width: 1000px) {
+                .navbar_item {
+                    font-size: 14px;
+                }
+                .colaboration_text{
+                    font-size: 14px;
+                }
+                .img_logo{
+                    height: 25px;
+                }
+                .main_header {
+                    height: 40vh;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <img class="img_logo" src="logo.png" onclick="window.open('https://instagram.com/rexhercup')">
+            <div id="link_bases" class="navbar_item">Bases</div>
+            <div id="link_lichess_team" class="navbar_item">Equipo Lichess</div>
+            <div id="link_lichess_trn" class="navbar_item">Torneo</div>
+            <div id="link_form" class="navbar_item">Formulario Inscripcción</div>
+            <div id="link_instagram" class="navbar_item">Instagram</div>
+            <div id="colaboration_header">
+                <div class="colaboration_text">Con la colaboración de:</div>
+                <img class="img_logo" src="logo_ateneu.png" onclick="window.open('http://ateneucolon.org/')">
+                <img class="img_logo" src="logo_escacimat.png" onclick="window.open('https://tiendaajedrezescacimat.es/es/')">
+                <img class="img_logo" src="logo_ajedrez21.jpeg" onclick="window.open('https://www.ajedrez21.com/es/')">
+            </div>
+        </div>
+        <div class="main_header">
+            <div class="main_title_header">
+                <div class="main_title">Rexher Cup III</div>
+            </div>
+        </div>
+        <div class="main_body">
+            <table class="main_table">
+                <tr>
+                    <th>Título</th>
+                    <th>Nombre</th>
+                    <th>FIDE</th>
+                    <th>Tramo</th>
+                    <th>Categoría</th>
+                </tr>
+                <tr>
+                    <td>FM</td>
+                    <td>Salinas Tomás, Daniel</td>
+                    <td>2355</td>
+                    <td></td>
+                    <td>Sub18</td>
+                </tr>
+                <tr>
+                    <td>FM</td>
+                    <td>Masague Artero, Guerau</td>
+                    <td>2345</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>FM</td>
+                    <td>Del Prado Rodríguez, Xulio</td>
+                    <td>2296</td>
+                    <td></td>
+                    <td>Sub18</td>
+                </tr>
+                <tr>
+                    <td>FM</td>
+                    <td>Valle Luis, Leo</td>
+                    <td>2241</td>
+                    <td></td>
+                    <td>Sub18</td>
+                </tr>
+                <tr>
+                    <td>CM</td>
+                    <td>Uber Gracia, Hugo</td>
+                    <td>2220</td>
+                    <td></td>
+                    <td>Sub14</td>
+                </tr>
+                <tr>
+                    <td>CM</td>
+                    <td>Korneev Leskova, Svyatoslav</td>
+                    <td>2193</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Ermachenko, Manuel</td>
+                    <td>2178</td>
+                    <td></td>
+                    <td>Sub18</td>
+                </tr>
+                <tr>
+                    <td>CM</td>
+                    <td>Uber Gracia, Hugo</td>
+                    <td>2220</td>
+                    <td></td>
+                    <td>Sub14</td>
+                </tr>
+                <tr>
+                    <td>CM</td>
+                    <td>Gonzalez Castillo, José Javier</td>
+                    <td>2165</td>
+                    <td></td>
+                    <td>Sub18</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Díaz Miño, Daniel</td>
+                    <td>2126</td>
+                    <td></td>
+                    <td>Sub18</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Haering Hijon, Javier</td>
+                    <td>2065</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>González Alonso, Martí</td>
+                    <td>2059</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Alonso Rodríguez, Tristán</td>
+                    <td>2048</td>
+                    <td></td>
+                    <td>Sub18</td>
+                </tr>
+                <tr>
+                    <td>WFM</td>
+                    <td>Martínez Ramos, Paula</td>
+                    <td>2033</td>
+                    <td></td>
+                    <td>Sub18</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Atarés Buisán, Sergio</td>
+                    <td>2033</td>
+                    <td></td>
+                    <td>Sub18</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Marcos Rodríguez , Raúl</td>
+                    <td>2024</td>
+                    <td></td>
+                    <td>Sub18</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Muñoz Vallés, Jorge</td>
+                    <td>2013</td>
+                    <td></td>
+                    <td>Sub18</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Silva Cerda, Mark</td>
+                    <td>1998</td>
+                    <td>U2000</td>
+                    <td>Sub18</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Bru Montoya, Pau</td>
+                    <td>1991</td>
+                    <td>U2000</td>
+                    <td>Sub14</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Doñate Moreno, David</td>
+                    <td>1990</td>
+                    <td>U2000</td>
+                    <td>Sub18</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Pujol Biosca, Joan</td>
+                    <td>1983</td>
+                    <td>U2000</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Iravedra Ainkov, Francisco</td>
+                    <td>1974</td>
+                    <td>U2000</td>
+                    <td>Sub18</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Bru Gilbert, Rafael</td>
+                    <td>1947</td>
+                    <td>U2000</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Sanz Pueyo, Adrián</td>
+                    <td>1856</td>
+                    <td>U2000</td>
+                    <td>Sub14</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Romera Navia, Alberto</td>
+                    <td>1831</td>
+                    <td>U2000</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Sala Martín, Guillem</td>
+                    <td>1814</td>
+                    <td>U2000</td>
+                    <td>Sub14</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Antoñanzas Fernández, Mario</td>
+                    <td>1758</td>
+                    <td>U1800</td>
+                    <td>Sub14</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Sánchez Orozco, Edward Steven</td>
+                    <td>1633</td>
+                    <td>U1800</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Ksiri Crihana, Christian Elías</td>
+                    <td>1628</td>
+                    <td>U1800</td>
+                    <td>Sub18</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>Mesa Regalado, Adrián</td>
+                    <td>1537</td>
+                    <td>U1800</td>
+                    <td>Sub14</td>
+                </tr>
+              </table>
+        </div>
+    <script>
+        var linkBases = document.getElementById("link_bases");
+        linkBases.addEventListener("click", function(){
+            window.open("https://bit.ly/bases-rexhercup");
+        })
+
+        var linkLichessTeam = document.getElementById("link_lichess_team");
+        linkLichessTeam.addEventListener("click", function(){
+            window.open("https://lichess.org/team/rexhercup");
+        })
+
+        var linkLichessTeam = document.getElementById("link_lichess_trn");
+        linkLichessTeam.addEventListener("click", function(){
+            window.open("https://lichess.org/tournament/ZvohRu3P");
+        })
+
+        var linkLichessTeam = document.getElementById("link_form");
+        linkLichessTeam.addEventListener("click", function(){
+            window.open("https://bit.ly/rexhercup");
+        })
+
+        var linkLichessTeam = document.getElementById("link_instagram");
+        linkLichessTeam.addEventListener("click", function(){
+            window.open("https://instagram.com/rexhercup");
+        })
+    </script>
+    </body>
+</html>
