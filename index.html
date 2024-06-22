@@ -119,6 +119,18 @@
                 font-style: italic;
             }
 
+            tbody tr::before {
+                counter-increment: fila;
+                content: counter(fila);
+                display: table-cell;
+                vertical-align: middle;
+
+            }
+            
+            tbody {
+                counter-reset: fila;
+            }
+
             @media screen and (max-width: 1000px) {
                 .navbar_item {
                     font-size: 18px;
@@ -308,251 +320,256 @@
         </div>
         <div class="main_body">
             <table class="main_table">
-                <tr>
-                    <th>Título</th>
-                    <th>Nombre</th>
-                    <th>FIDE</th>
-                    <th>Tramo</th>
-                    <th>Categoría</th>
-                </tr>
-                <tr>
-                    <td>FM</td>
-                    <td>Silva Lucena, Cristian</td>
-                    <td>2374</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>FM</td>
-                    <td>Salinas Tomás, Daniel</td>
-                    <td>2355</td>
-                    <td></td>
-                    <td>Sub18</td>
-                </tr>
-                <tr>
-                    <td>FM</td>
-                    <td>Masague Artero, Guerau</td>
-                    <td>2345</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>FM</td>
-                    <td>Del Prado Rodríguez, Xulio</td>
-                    <td>2296</td>
-                    <td></td>
-                    <td>Sub18</td>
-                </tr>
-                <tr>
-                    <td>FM</td>
-                    <td>Valle Luis, Leo</td>
-                    <td>2241</td>
-                    <td></td>
-                    <td>Sub18</td>
-                </tr>
-                <tr>
-                    <td>CM</td>
-                    <td>Uber Gracia, Hugo</td>
-                    <td>2220</td>
-                    <td></td>
-                    <td>Sub14</td>
-                </tr>
-                <tr>
-                    <td>CM</td>
-                    <td>Korneev Leskova, Svyatoslav</td>
-                    <td>2193</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Ermachenko, Manuel</td>
-                    <td>2178</td>
-                    <td></td>
-                    <td>Sub18</td>
-                </tr>
-                <tr>
-                    <td>CM</td>
-                    <td>Gonzalez Castillo, José Javier</td>
-                    <td>2165</td>
-                    <td></td>
-                    <td>Sub18</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Díaz Miño, Daniel</td>
-                    <td>2126</td>
-                    <td></td>
-                    <td>Sub18</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Haering Hijon, Javier</td>
-                    <td>2065</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>González Alonso, Martí</td>
-                    <td>2059</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Alonso Rodríguez, Tristán</td>
-                    <td>2048</td>
-                    <td></td>
-                    <td>Sub18</td>
-                </tr>
-                <tr>
-                    <td>WFM</td>
-                    <td>Martínez Ramos, Paula</td>
-                    <td>2033</td>
-                    <td></td>
-                    <td>Sub18</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Atarés Buisán, Sergio</td>
-                    <td>2033</td>
-                    <td></td>
-                    <td>Sub18</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Caño Mateos, Pablo</td>
-                    <td>2032</td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Leone Amigot, Haymar</td>
-                    <td>2027</td>
-                    <td></td>
-                    <td>Sub18</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Marcos Rodríguez, Raúl</td>
-                    <td>2024</td>
-                    <td></td>
-                    <td>Sub18</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Muñoz Vallés, Jorge</td>
-                    <td>2013</td>
-                    <td></td>
-                    <td>Sub18</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Silva Cerda, Mark</td>
-                    <td>1998</td>
-                    <td>U2000</td>
-                    <td>Sub18</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Bru Montoya, Pau</td>
-                    <td>1991</td>
-                    <td>U2000</td>
-                    <td>Sub14</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Doñate Moreno, David</td>
-                    <td>1990</td>
-                    <td>U2000</td>
-                    <td>Sub18</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Pujol Biosca, Joan</td>
-                    <td>1983</td>
-                    <td>U2000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Iravedra Ainkov, Francisco</td>
-                    <td>1974</td>
-                    <td>U2000</td>
-                    <td>Sub18</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Bru Gilbert, Rafael</td>
-                    <td>1947</td>
-                    <td>U2000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Li Chen, Helena Joana</td>
-                    <td>1937</td>
-                    <td>U2000</td>
-                    <td>Sub18</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Sanz Pueyo, Adrián</td>
-                    <td>1856</td>
-                    <td>U2000</td>
-                    <td>Sub14</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Romera Navia, Alberto</td>
-                    <td>1831</td>
-                    <td>U2000</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Sala Martín, Guillem</td>
-                    <td>1814</td>
-                    <td>U2000</td>
-                    <td>Sub14</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Antoñanzas Fernández, Mario</td>
-                    <td>1758</td>
-                    <td>U1800</td>
-                    <td>Sub14</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Sánchez Orozco, Edward Steven</td>
-                    <td>1633</td>
-                    <td>U1800</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Ksiri Crihana, Christian Elías</td>
-                    <td>1628</td>
-                    <td>U1800</td>
-                    <td>Sub18</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Mesa Regalado, Adrián</td>
-                    <td>1537</td>
-                    <td>U1800</td>
-                    <td>Sub14</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Emilov Chalev, Emilio</td>
-                    <td>1471</td>
-                    <td>U1800</td>
-                    <td>Sub18</td>
-                </tr>
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Título</th>
+                        <th>Nombre</th>
+                        <th>FIDE</th>
+                        <th>Tramo</th>
+                        <th>Categoría</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>FM</td>
+                        <td>Silva Lucena, Cristian</td>
+                        <td>2374</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>FM</td>
+                        <td>Salinas Tomás, Daniel</td>
+                        <td>2355</td>
+                        <td></td>
+                        <td>Sub18</td>
+                    </tr>
+                    <tr>
+                        <td>FM</td>
+                        <td>Masague Artero, Guerau</td>
+                        <td>2345</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>FM</td>
+                        <td>Del Prado Rodríguez, Xulio</td>
+                        <td>2296</td>
+                        <td></td>
+                        <td>Sub18</td>
+                    </tr>
+                    <tr>
+                        <td>FM</td>
+                        <td>Valle Luis, Leo</td>
+                        <td>2241</td>
+                        <td></td>
+                        <td>Sub18</td>
+                    </tr>
+                    <tr>
+                        <td>CM</td>
+                        <td>Uber Gracia, Hugo</td>
+                        <td>2220</td>
+                        <td></td>
+                        <td>Sub14</td>
+                    </tr>
+                    <tr>
+                        <td>CM</td>
+                        <td>Korneev Leskova, Svyatoslav</td>
+                        <td>2193</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Ermachenko, Manuel</td>
+                        <td>2178</td>
+                        <td></td>
+                        <td>Sub18</td>
+                    </tr>
+                    <tr>
+                        <td>CM</td>
+                        <td>Gonzalez Castillo, José Javier</td>
+                        <td>2165</td>
+                        <td></td>
+                        <td>Sub18</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Díaz Miño, Daniel</td>
+                        <td>2126</td>
+                        <td></td>
+                        <td>Sub18</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Haering Hijon, Javier</td>
+                        <td>2065</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>González Alonso, Martí</td>
+                        <td>2059</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Alonso Rodríguez, Tristán</td>
+                        <td>2048</td>
+                        <td></td>
+                        <td>Sub18</td>
+                    </tr>
+                    <tr>
+                        <td>WFM</td>
+                        <td>Martínez Ramos, Paula</td>
+                        <td>2033</td>
+                        <td></td>
+                        <td>Sub18</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Atarés Buisán, Sergio</td>
+                        <td>2033</td>
+                        <td></td>
+                        <td>Sub18</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Caño Mateos, Pablo</td>
+                        <td>2032</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Leone Amigot, Haymar</td>
+                        <td>2027</td>
+                        <td></td>
+                        <td>Sub18</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Marcos Rodríguez, Raúl</td>
+                        <td>2024</td>
+                        <td></td>
+                        <td>Sub18</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Muñoz Vallés, Jorge</td>
+                        <td>2013</td>
+                        <td></td>
+                        <td>Sub18</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Silva Cerda, Mark</td>
+                        <td>1998</td>
+                        <td>U2000</td>
+                        <td>Sub18</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Bru Montoya, Pau</td>
+                        <td>1991</td>
+                        <td>U2000</td>
+                        <td>Sub14</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Doñate Moreno, David</td>
+                        <td>1990</td>
+                        <td>U2000</td>
+                        <td>Sub18</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Pujol Biosca, Joan</td>
+                        <td>1983</td>
+                        <td>U2000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Iravedra Ainkov, Francisco</td>
+                        <td>1974</td>
+                        <td>U2000</td>
+                        <td>Sub18</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Bru Gilbert, Rafael</td>
+                        <td>1947</td>
+                        <td>U2000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Li Chen, Helena Joana</td>
+                        <td>1937</td>
+                        <td>U2000</td>
+                        <td>Sub18</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sanz Pueyo, Adrián</td>
+                        <td>1856</td>
+                        <td>U2000</td>
+                        <td>Sub14</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Romera Navia, Alberto</td>
+                        <td>1831</td>
+                        <td>U2000</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sala Martín, Guillem</td>
+                        <td>1814</td>
+                        <td>U2000</td>
+                        <td>Sub14</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Antoñanzas Fernández, Mario</td>
+                        <td>1758</td>
+                        <td>U1800</td>
+                        <td>Sub14</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Sánchez Orozco, Edward Steven</td>
+                        <td>1633</td>
+                        <td>U1800</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Ksiri Crihana, Christian Elías</td>
+                        <td>1628</td>
+                        <td>U1800</td>
+                        <td>Sub18</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Mesa Regalado, Adrián</td>
+                        <td>1537</td>
+                        <td>U1800</td>
+                        <td>Sub14</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>Emilov Chalev, Emilio</td>
+                        <td>1471</td>
+                        <td>U1800</td>
+                        <td>Sub18</td>
+                    </tr>
+                </tbody>
               </table>
         </div>
     <script>
