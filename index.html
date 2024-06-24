@@ -412,13 +412,6 @@
                     </tr>
                     <tr>
                         <td>CM</td>
-                        <td>Uber Gracia, Hugo</td>
-                        <td>2220</td>
-                        <td></td>
-                        <td>Sub14</td>
-                    </tr>
-                    <tr>
-                        <td>CM</td>
                         <td>Korneev Leskova, Svyatoslav</td>
                         <td>2193</td>
                         <td></td>
@@ -694,6 +687,24 @@
               </table>
         </div>
     <script>
+        function sumarTercerasEntradas() {
+            // Seleccionamos todas las filas de la tabla
+            const filas = document.querySelectorAll("table tr");
+
+            let suma = 0;
+            // Iteramos sobre cada fila
+            filas.forEach(fila => {
+                // Seleccionamos la tercera celda de la fila
+                const terceraCelda = fila.cells[2];
+                if (terceraCelda) {
+                    // Convertimos el contenido de la celda a un número y lo sumamos
+                    suma += parseFloat(terceraCelda.textContent) || 0;
+                }
+            });
+
+            // Mostramos la suma
+            alert("La suma de las terceras entradas es: " + suma);
+        }
         var linkBases = document.getElementById("link_bases");
         linkBases.addEventListener("click", function(){
             window.open("https://bit.ly/bases-rexhercup");
